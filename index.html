@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ da Rifa</title>
+    <style>
+
+        /* #### Declaração da fonte #### */
+        @font-face {
+            font-family: '1785 GLC Baskerville Normal';
+            font-style: normal;
+            font-weight: normal;
+            src: local('1785 GLC Baskerville Normal'), url('1785 GLC Baskerville-N.woff') format('woff');
+        }
+
+        /* #### Aplicando a fonte no <h1> #### */
+        .fonte-personalizada {
+            font-family: '1785 GLC Baskerville Normal';
+            font-weight: normal;
+            font-size: 42px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 0px;
+            font-size: 2.5em;
+            color: #e48764;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            color: #e48764;
+        }
+
+
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: #2d2d2d;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .question-btn {
+            width: 100%;
+            padding: 20px;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.1em;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .question-btn:hover {
+            background-color: #363636;
+        }
+
+        .arrow {
+            transition: transform 0.3s ease;
+            margin-left: 15px;
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 20px;
+            background-color: #363636;
+        }
+
+        .answer p {
+            padding: 20px 0;
+            line-height: 1.6;
+        }
+
+        .answer.active {
+            max-height: 500px;
+        }
+
+        .arrow.active {
+            transform: rotate(180deg);
+        }
+
+        a {
+            color: #e48764;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .title {
+                font-size: 2em;
+            }
+
+            .question-btn {
+                padding: 15px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="fonte-personalizada">Perguntas Frequentes sobre a Rifa</h1>
+    <h2 class="fonte-personalizada">da equipe Dracoproxy</h2>
+    
+    <div class="faq-container">
+        <!-- Item 1 -->
+        <div class="faq-item">
+            <button class="question-btn">
+                Qual vai ser o dia e o horário do sorteio?
+                <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
+            </button>
+            <div class="answer">
+                <p>Dia 20 de março (quinta-feira) às 11h35m (Horário de Manaus).</p>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="faq-item">
+            <button class="question-btn">
+                Pode comprar a rifa quem não é da Fucapi?
+                <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
+            </button>
+            <div class="answer">
+                <p>Sim.</p>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="faq-item">
+            <button class="question-btn">
+                O que é Super Dracoproxy?
+                <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
+            </button>
+            <div class="answer">
+                <p>O nome da equipe do trote pertencente a sala de engenharia de Software do turno matutino.</p>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="faq-item">
+            <button class="question-btn">
+                O que vai vir na cesta?
+                <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
+            </button>
+            <div class="answer">
+                <p>Segredo.</p>
+            </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="faq-item">
+            <button class="question-btn">
+                Precisa estar no momento do sorteio para estar elegível ao prêmio?
+                <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
+            </button>
+            <div class="answer">
+                <p>Não é necessário estar presente em local específico quando o resultado do sorteio for divulgado, pois o ganhador será contatado diretamente por telefone. Além disso, o refeitório da Fucapi possui capacidade limitada e não acomoda aglomerações. Por isso, orientamos que evitem frequentar o local, mesmo em dias sem sorteio.</p>
+            </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="faq-item">
+            <button class="question-btn">
+                Como entrar em contato com o suporte?
+                <svg class="arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
+            </button>
+            <div class="answer">
+                <p>Você pode entrar em contato através do nosso <a href="https://docs.google.com/forms/d/e/1FAIpQLSepi27CTWiBa5Zz5m-OAfp8TSnZ6L5pLcihCUgXnnm92nuhSA/viewform?usp=dialog">formulário de suporte online</a>.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.question-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.closest('.faq-item');
+                const answer = faqItem.querySelector('.answer');
+                const arrow = button.querySelector('.arrow');
+
+                answer.classList.toggle('active');
+                arrow.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
